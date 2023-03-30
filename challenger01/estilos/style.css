@@ -12,18 +12,22 @@ body{
 }
 
 div.result{
+    display: flex;
     height: 50vh;
     width: 100vw;
-    background-color: coral;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: white;
     border-radius: 0px 0px 30px 30px;
+    align-items: center;
 }
 div.result > h1{
+    display: flex;
     text-align: center;
     padding: 20px; 
 }
 div.circle {
-    background-color: black;
+    display: flex;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     text-align: center;
     border: 1px solid black;
     border-radius: 50%;
@@ -32,12 +36,15 @@ div.circle {
     
 }
 div.result > h2{
+    display: flex;
     text-align: center;
 }
 div.result > h3{
+    display: flex;
     text-align: center;
 }
 div.result > p{
+    display: flex;
     text-align: center;
 }
 
