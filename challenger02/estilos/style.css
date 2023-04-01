@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600&family=Outfit&display=swap');
+
+:root {
+    --color-white:hsl(0, 0%, 100%);
+
+    --color-light-gray:hsl(212, 45%, 89%);
+
+    --color-grayish-blue:hsl(220, 15%, 55%);
+
+    --color-dark-blue:hsl(218, 44%, 22%);
+   
+    --weights: 400, 700;
+
+    --font-size: (paragraph): 15px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-light-gray);
+    justify-content: center;
+
+
+}
+
+.content{
+    padding: 20px;
+    background-color: var(--color-white);
+    display: flex;
+    border-radius: 30px;
+    border: 1px solid var(--color-light-gray);
+    width: 89%;
+    height: 75%;
+    justify-content: center;
+    
+    
+}
+img{
+    border-radius: 15px;
+    width: 100%;
+    height: 95%;
+}
+section.qr-code{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+h1{
+    margin-top: 40px;
+    color: var(--color-dark-blue);
+    font-family:'Outfit', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+   
+}
+p{
+    margin: 30px;
+    color: var(--color-grayish-blue);   
+    text-align: center;
+    font-family:'Hanken Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+article{
+   
+
+}
