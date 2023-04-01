@@ -2,52 +2,185 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Passion One', cursive;
 }
-body{
+
+body {
     background-color: rgb(236, 236, 236);
 }
 
-div.result{
+div.result {
     display: flex;
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: white;
     border-radius: 0px 0px 30px 30px;
     align-items: center;
-}
-div.result > h1{
-    display: flex;
-    text-align: center;
-    padding: 20px; 
-}
-div.circle {
-    display: flex;
-    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 50px;
-    padding: 20px;
-    
-}
-div.result > h2{
-    display: flex;
-    text-align: center;
-}
-div.result > h3{
-    display: flex;
-    text-align: center;
-}
-div.result > p{
-    display: flex;
-    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-p{
-    font-size: 18px;
+
+
+div.circle {
+
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    text-align: center;
+    border: 1px transparent black;
+    border-radius: 50%;
+    width: 80px;
+    padding: 30px;
 }
+
+div.circle>h1 {
+    font-size: 50px;
+    padding-bottom: 3px;
+}
+
+div.circle>h3 {
+    color: rgba(255, 255, 255, 0.315);
+}
+
+div.result>h3 {
+    background-color: coral;
+
+}
+
+div.result>p {
+    color: hsla(0, 0%, 100%, 0.623);
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+div.Summary {
+    display: flex;
+   color: blue;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+
+#alone{
+    
+    color: black;
+    font-size: 18px;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    text-align: start;
+}
+p.iSumary{
+    width: 85%;
+}
+    
+
+p.reaction {
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+p.memory {
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+p.verbal {
+    color:  hsl(166, 100%, 37%);
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+p.visual {
+    color: hsl(234, 85%, 45%) ;
+   
+    display: flex;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    justify-content:space-between;
+}
+
+span#inicio-da-caixa{
+    align-items: flex-end;
+    display: flex;
+    text-align: start;
+}
+span#fim-da-caixa{
+    color: black;
+}
+img{
+    margin-right: 10px;
+}
+
+a.botaocontinue {
+    text-align: center;
+    padding: 15px;
+    font-size: 27px;
+    text-decoration: none;
+    color: white;
+    width: 70%;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 30px;
+    margin: 20px;
+}
+
+a.botaocontinue:hover {
+    color: black;
+    background-color: cornflowerblue;
+}
+
+
+/*text-align: center;
+    padding: 15px;
+    width: 70vw;
+    border-radius: 20px;
+    padding: 20px;
+    border-style: ridge;
+    border: 2px 2px black;
+
+    /*display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 17px 18px;
+    gap: 10px;
+
+    position: absolute;
+    height: 51px;
+    left: 40px;
+    right: 40px;
+    top: calc(50% - 51px/2 + 25.5px);
+
+    background: rgb(255, 255, 255, 0.25);
+    border-radius: 6px;
