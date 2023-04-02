@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root{
+    --font-family-Montserrat: 'Montserrat', sans-serif;
+
+    --font-family-Fraunces:'Fraunces', serif;
+
+    --color-primary-Dark-cyan:hsl(158, 36%, 37%);
+
+    --color-primary-Cream: hsl(30, 38%, 92%);
+
+    --color-neutral-Very-dark-blue: hsl(212, 21%, 14%);
+
+    --color-neutral-Dark-grayish-blue: hsl(228, 12%, 48%);
+
+    --color-neutral-White: hsl(0, 0%, 100%);
+
+    --font-size-paragraph:font-size: 14px;
+
+
+}
+/* Mobile 375px
+Desktop 1440px*/
+
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-primary-Cream);
+}
+main{
+    background-color: var(--color-neutral-White);
+    width: 375px;
+    height: 667px;
+    border-radius: 15px;
+}
+
+img.perfume-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+article{
+    padding: 20px;
+}
+
+article>p.perfume{
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: var(--color-neutral-Very-dark-blue);
+    font-family:var(--font-family-Montserrat);
+}
+
+article>h1.gabrielle{
+    font-family: var
+    (--font-family-Fraunces);
+    font-weight: 700;
+    padding: 10px 0px;
+    font-size: 40px;
+}
+article>p.floral{
+    padding: 10px 0px;
+    font-family: var(--font-family-Montserrat);
+}
+article>p.price{
+    padding: 10px 0px;
+    padding-bottom: 25px;
+    display: flex;
+    color: var(--color-primary-Dark-cyan);
+    text-align: justify;
+    font-size: 30px;
+    font-family: var(--font-family-Fraunces);
+}
+del{
+    padding-left: 30px;
+    font-family: var(--font-family-Montserrat);
+    padding-top: 5px;
+    font-size: 15px;
+    
+}
+img.car{
+    padding-right: 5px;
+}
+
+a.cart{
+    font-family: var(--font-family-Montserrat);
+    display: block;
+    color: var(--color-neutral-White);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-primary-Dark-cyan);
+    text-decoration: none;
+}
+a.cart:hover{
+    color: black;
+    background-color: darkgray;
+}
