@@ -113,3 +113,7 @@ a.cart:hover{
     color: black;
     background-color: darkgray;
 }
+
+html{
+    background-color: #e0e8ff;
+}
