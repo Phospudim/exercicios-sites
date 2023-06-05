@@ -2,46 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Frontend Mentor | Interactive rating component</title>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <section id="how-did">
+  <header>
+    <h1>
+      <div><img src="images/icon-star.svg" alt="star" id="star"></div> 
+      <!-- Rating state start -->
+      How did we do?
+    </h1>
+  </header>
 
-  <!-- Rating state start -->
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+    <form id="avaliacaoForm">
+      <label for="avaliacao"></label>
+      <div id="ratingButtons">
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+      </div>
+      <input type="hidden" id="avaliacao" name="avaliacao">
+      <input type="submit" value="SUBMIT" id="submit">
+    </form>
+  </section>
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+  <section id="thankyou" style="display: none;">
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <p>You selected <!-- Add rating here --> out of 5</p>
+    <h1>Thank you!</h1>
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </p>
+    <!-- Thank you state end -->
+  </section>
 
   
-  <div class="attribution">
+  <div class="attribution" style="display: none;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>

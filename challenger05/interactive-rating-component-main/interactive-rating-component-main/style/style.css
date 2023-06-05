@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap'); 
+
+:root{
+    --color--first--Pale--blue: hsl(225, 100%, 94%);
+    --color--second--Bright--blue: hsl(245, 75%, 52%);
+    --color--neutral--Very--pale--blue: hsl(225, 100%, 98%);
+    --color--neutral--Desaturated--blue: hsl(224, 23%, 55%);
+    --color--neutral--Dark--blue: hsl(223, 47%, 23%);
+}
+
+/*
+Layout
+The designs were created to the following widths:
+
+Mobile: 375px
+Desktop: 1440px
+*/
+
+*{
+    
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+body{
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    background-color: #141519;
+}
+
+#how-did{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 10px 30px 30px 30px;
+    text-align: justify;
+    border-radius: 30px;
+    width: 375px;
+    height: 375px;
+    background: linear-gradient(#242A34, #171E28);
+}
+img#star{
+    margin-bottom: 20px;
+    border-radius:50% ;
+    padding: 15px;
+    background-color: #262F38;
+    box-shadow: 3px 3px 10px rgba(30, 30, 30, 0.055);
+}
+header{
+    display: flex;
+}
+header > h1{
+    color:hsl(0, 0%, 100%) ;
+    font-weight: 700;
+    font-family: 'Overpass', sans-serif;
+    color: var(--color--first--Pale--blue);
+}
+p{
+    
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+}
+div#ratingButtons{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    font-size: medium;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    background-color: #262F38;
+    box-shadow: 3px 3px 10px rgba(30, 30, 30, 0.055);
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    font-family: 'Overpass', sans-serif;
+    padding: 30px;
+    border-radius: 50%;
+    border: none;
+    width: 5px;
+    height: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#submit{
+    letter-spacing: 3px;
+    font-size: medium;
+    border: none;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+    background-color:hsl(25, 97%, 53%) ;
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px;
+    
+    
+}
+
