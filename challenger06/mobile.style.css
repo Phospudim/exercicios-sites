@@ -1,167 +1,128 @@
 @charset "UTF-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-/*## Layout
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-#### Text
-
-- Very dark desaturated blue: hsl(238, 29%, 16%)
-- Soft red: hsl(14, 88%, 65%)
-
-#### Gradient
-
-Background gradient:
-
-- Soft violet: hsl(273, 75%, 66%)
-- Soft blue: hsl(240, 73%, 65%)
-
-### Neutral
-
-#### Text
-
-- Very dark grayish blue: hsl(237, 12%, 33%)
-- Dark grayish blue: hsl(240, 6%, 50%)
-
-#### Dividers
-
-- Light grayish blue: hsl(240, 5%, 91%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 12px
-
-### Font
-
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700
-
-*/
+/* Layout */
 
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.container {
+  position: relative;
+}
+
+.decorative-image {
+  width: 100%;
+  max-width: 275px;
+  position: absolute;
+  top: -144px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shadowi {
+  margin-top: -20px;
+  text-align: center;
+  width: 100%;
+  max-width: 265px;
 }
 
 section {
-    color: blue;
+  width: 90%;
+  max-width: 500px;
+  color: hsl(238, 29%, 16%);
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  padding-bottom: 50px;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
 
-@media(max-width: 500px) {
+.faq-item {
+  margin-bottom: 20px;
+}
 
-    body {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    }
+.question button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+}
 
-    #imgi {
-        width: 275px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
+.question .icon-container {
+  margin-left: auto;
 
-    .shadowi {
-        margin-top: -20px;
-        text-align: center;
-        width: 265px;
-    }
+}
 
-    .container {
-        position: relative;
-    }
+.question .icon {
+  width: 15px;
+  height: 10px;
+}
 
-    .decorative-image {
-        width: 275px;
-        position: absolute;
-        top: -144px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+.answer {
+  display: none;
+  padding: 15px;
+  font-size: 12px;
+  color: hsl(237, 12%, 33%);
+}
 
-    section {
-        width: 90vw;
-        color: hsl(238, 29%, 16%);
-        font-family: 'Kumbh Sans', sans-serif;
-        background-color: white;
-        border-radius: 25px;
-        padding: 20px;
-        padding-bottom: 50px;
-    }
+.questions{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
 
+/* Responsividade */
 
+@media (min-width: 501px) {
+  .decorative-image {
+    top: -160px;
+  }
 
-    h1 {
-        font-weight: 700;
-        padding: 30px;
-        font-size: 40px;
-    }
+  .shadowi {
+    margin-top: -40px;
+  }
 
-    p {
-        text-align: start;
-        font-size: 12px;
-        padding: 15px;
-        font-weight: 400;
-        color: hsl(237, 12%, 33%);
-        width: 100%;
-    }
+  section {
+    padding-bottom: 80px;
+  }
 
-    button {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-decoration: none;
-        width: 100%;
-        background-color: white;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px solid hsl(240, 5%, 91%);
-    }
-    button:hover {
-        
-        cursor: pointer;
-    }
+  h1 {
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
 
-    .faq-item {
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
+  .question button {
+    padding: 20px;
+  }
 
-    .icon-container {
-        margin-left: 100%;
-        
-    }
-
-    .icon {
-        
-        width: 15px;
-        height: 10px;
-        
-    }
+  .answer {
+    padding: 20px;
+    font-size: 14px;
+  }
 }
