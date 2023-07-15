@@ -14,14 +14,17 @@
 
   <section>
     <div class="container">
-      <img src="images/illustration-woman-online-mobile.svg" alt="Imagem" class="decorative-image">
-      <div class="content">
-        <!-- Conteúdo da div -->
-      </div>
+      <picture class="image-container">
+        <source media="(min-width: 502px)" srcset="images/illustration-woman-online-desktop.svg">
+        <img src="images/illustration-woman-online-mobile.svg" alt="Imagem" class="decorative-image">
+      </picture>
     </div>
-
+    
     <div class="container">
-      <img src="images/bg-pattern-mobile.svg" alt="" class="shadowi">
+      <picture class="image-container-picture">
+        <source media="(min-width: 502px)" srcset="images/bg-pattern-desktop.svg">
+        <img src="images/bg-pattern-mobile.svg" alt="" class="shadowi">
+      </picture>
     </div>
 
     <div id="FAQcontainer">
@@ -35,6 +38,7 @@
               <p class="questions">How many team members can I invite?
                 <span class="icon-container">
                   <img src="images/icon-arrow-down.svg" alt="Ícone" class="icon">
+                  
                 </span>
               </p>
             </button>

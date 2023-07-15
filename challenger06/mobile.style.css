@@ -42,7 +42,7 @@ body {
 
 section {
   width: 90%;
-  max-width: 500px;
+  
   color: hsl(238, 29%, 16%);
   font-family: 'Kumbh Sans', sans-serif;
   background-color: white;
@@ -75,7 +75,10 @@ h1 {
 
 .question .icon-container {
   margin-left: auto;
+}
 
+.arrow-up {
+  transform: rotate(-180deg);
 }
 
 .question .icon {
@@ -90,14 +93,27 @@ h1 {
   color: hsl(237, 12%, 33%);
 }
 
-.questions{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    
+.questions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: hsl(237, 12%, 33%);
+}
+
+.faq-item button {
+  font-weight: normal;
 }
 
 /* Responsividade */
+
+@media (min-width: 502px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
 
 @media (min-width: 501px) {
   .decorative-image {
